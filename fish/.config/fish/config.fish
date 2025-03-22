@@ -9,7 +9,7 @@ end
 if status is-login   
   # Kill any existing agents before starting a new one
     if not pgrep ssh-agent &>/dev/null
-        eval (ssh-agent -c)
+        eval (keychain)
     end
     if not ssh-add -l &>/dev/null
         ssh-add ~/.ssh/id_ed25519 &>/dev/null
