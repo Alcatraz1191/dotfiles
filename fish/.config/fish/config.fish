@@ -3,7 +3,13 @@ if status is-interactive
     set fish_greeting
     source $__fish_config_dir/environment.fish
     fish_add_path -g ~/.cargo/bin
-    eval (ssh-agent -c) >/dev/null
     eval $(starship init fish)
     starship init fish | source
+    # Kill any existing agents before starting a new one
+    if pgrep ssh-agent > /dev/null
+      ssh-agent -k
+    end
+    eval (ssh-agent -c)
+    ssh-add ~/.ssh/id_rsa 2>/dev/null
+
 end
