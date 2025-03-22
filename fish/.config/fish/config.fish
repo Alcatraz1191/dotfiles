@@ -11,5 +11,4 @@ if status is-interactive
     end
     eval (ssh-agent -c)
     ssh-add ~/.ssh/id_ed25519 2>/dev/null
-
 end
