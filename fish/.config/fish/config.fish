@@ -5,10 +5,13 @@ if status is-interactive
     fish_add_path -g ~/.cargo/bin
     eval $(starship init fish)
     starship init fish | source
-    # Kill any existing agents before starting a new one
-    if pgrep ssh-agent > /dev/null
-      ssh-agent -k
+end
+if status is-login   
+  # Kill any existing agents before starting a new one
+    if not pgrep ssh-agent &>/dev/null
+        eval (ssh-agent -c)
     end
-    eval (ssh-agent -c)
-    ssh-add ~/.ssh/id_ed25519 2>/dev/null
+    if not ssh-add -l &>/dev/null
+        ssh-add ~/.ssh/id_ed25519 &>/dev/null
+    end
 end
