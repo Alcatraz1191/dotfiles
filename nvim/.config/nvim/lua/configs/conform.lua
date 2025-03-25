@@ -8,9 +8,9 @@ local options = {
     typescript = { "prettier" },
     json = { "prettier" },
     sh = { "shfmt" },
-    go = { "gofmt" },
-    javascriptreact = { "prettier" },  -- JSX
-    typescriptreact = { "prettier" },  -- TSX
+    go = { "gofumpt" },
+    javascriptreact = { "prettier" }, -- JSX
+    typescriptreact = { "prettier" }, -- TSX
   },
 
   format_on_save = {
