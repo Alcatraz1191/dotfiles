@@ -41,4 +41,4 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 vim.wo.number = true
-
+vim.wo.relativenumber = true
