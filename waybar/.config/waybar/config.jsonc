@@ -7,14 +7,17 @@
     "gtk-layer-shell": true,
     "height": 0,
     "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["hyprland/window"],
+    "modules-center": [
+    //"hyprland/window"
+    "clock"
+    ],
     "modules-right": [
-        "tray",
         //"mpd",
         "pulseaudio",
         "mpris",
-        "clock",
-        "custom/notification"
+        //"clock",
+        "custom/notification",
+        "tray"
     ],
 
     "hyprland/window": {
@@ -91,13 +94,13 @@
         "spacing": 10
     },
     "clock": {
-        "format": " {:%d %b   %H:%M}",
+        "format": "{:%d %B %Y | %H:%M}",
         "tooltip-format": "<big>{:%Y}</big>\n<tt><small>{calendar}</small></tt>"
     },
      "pulseaudio": {
-        "format": "{icon} {volume}%",
+        "format": "VOL {volume}%  |",
         "tooltip": false,
-        "format-muted": "Muted ",
+        "format-muted": "MUTED |",
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
         "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
         "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
