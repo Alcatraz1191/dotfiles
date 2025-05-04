@@ -6,4 +6,5 @@ if status is-interactive
     set -Ux npm_config_prefix ~/.local
     set fish_greeting
     set -Ux EDITOR nvim
+    fish_add_path ~/.cargo/bin
 end
