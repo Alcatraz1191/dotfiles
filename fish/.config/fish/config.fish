@@ -7,4 +7,5 @@ if status is-interactive
     set fish_greeting
     set -Ux EDITOR nvim
     fish_add_path ~/.cargo/bin
+    set -Ux TERM kitty
 end

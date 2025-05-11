@@ -10,13 +10,14 @@
  */
 
 * {
-  accentcolor: #ffcc66;
-  backgroundcolor: #1f2430f3;
+  accentcolor: #b4befe;
+  /*backgroundcolor: #1f2430f3;*/
   separatorcolor: transparent;
   foregroundcolor: #bfbab0;
   selectioncolor: #fafafa;
+  backgroundcolor: rgba(40, 40, 40, 0.6);
   
-  background-color: #212733;
+  background-color: rgba(0, 0, 0, 0);
   text-color: @foregroundcolor;
 }
 

@@ -1,12 +1,12 @@
 configuration {
   modi: "combi,drun,run,window";
   lines: 6;
-  terminal: "urxvt";
+  terminal: "kitty";
   run-shell-command: "{terminal} --window -- bash";
   drun-icon-theme: "Papirus-Dark";
   combi-modi: "drun,run";
   hide-scrollbar: true;
-  window-format: "{t}";
+  window-format: "{w}{c}{t}";
   combi-hide-mode-prefix: true;
   display-window: "Windows";
   display-windowcd: "Windows";
