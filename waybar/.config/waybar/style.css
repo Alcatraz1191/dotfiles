@@ -63,14 +63,14 @@ backlight {
 }
 
 #pulseaudio {
-  color: #DD9999;
+  color: #5F8787;
   border-radius: 1rem 0px 0px 1rem;
   margin-left: 1rem;
   background-color:  rgba(0, 0, 0, 0.8);
 }
 
 #custom-music {
-  color: #DD9999;;
+  color: #5F8787;
   border-radius: 1rem;
   background-color:  rgba(0, 0, 0, 0.8);
 }
