@@ -7,26 +7,25 @@
 }
 
 #waybar {
-  background: transparent;
-  color: @text;
+  background-color: rgba(0, 0, 0, 0);
   margin: 5px 5px;
 }
 
 #workspaces {
   border-radius: 1rem;
   margin: 5px;
-  background-color: rgba(40, 40, 40, 0.7); /* Semi-transparent */ 
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent */ 
   margin-left: 1rem;
 }
 
 #workspaces button {
-  color: @lavender;
+  color: #DD9999;
   border-radius: 1rem;
   padding: 0.4rem;
 }
 
 #workspaces button.active {
-  color: @sky;
+  color: #5F8787;
   border-radius: 1rem;
 }
 
@@ -43,31 +42,19 @@
 #pulseaudio,
 #custom-lock,
 #custom-power {
-  background-color: rgba(40, 40, 40, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 0.5rem 1rem;
   margin: 5px 0;
 }
 
 #clock {
-  color: @blue;
+  color: #DD9999;
   border-radius: 0px 1rem 1rem 0px;
   margin-right: 1rem;
-   background-color: rgba(40, 40, 40, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-#battery {
-  color: @green;
-}
-
-#battery.charging {
-  color: @green;
-}
-
-#battery.warning:not(.charging) {
-  color: @red;
-}
-
-#backlight {
+backlight {
   color: @yellow;
 }
 
@@ -76,27 +63,27 @@
 }
 
 #pulseaudio {
-  color: @maroon;
+  color: #DD9999;
   border-radius: 1rem 0px 0px 1rem;
   margin-left: 1rem;
- background-color: rgba(40, 40, 40, 0.7);
+  background-color:  rgba(0, 0, 0, 0.8);
 }
 
 #custom-music {
-  color: @mauve;
+  color: #DD9999;;
   border-radius: 1rem;
-  background-color: rgba(40, 40, 40, 0.7);
+  background-color:  rgba(0, 0, 0, 0.8);
 }
 
 #custom-lock {
   border-radius: 1rem 0px 0px 1rem;
-  color: @lavender;
+  color: #5F8787;
 }
 
 #custom-power {
   margin-right: 1rem;
   border-radius: 0px 1rem 1rem 0px;
-  color: @red;
+  color: #5F8787;
 }
 
 #tray {

@@ -10,12 +10,12 @@
  */
 
 * {
-  accentcolor: #b4befe;
+  accentcolor: #5F8787;
   /*backgroundcolor: #1f2430f3;*/
   separatorcolor: transparent;
   foregroundcolor: #bfbab0;
   selectioncolor: #fafafa;
-  backgroundcolor: rgba(40, 40, 40, 0.6);
+  backgroundcolor: rgba(0, 0, 0, 0.8);
   
   background-color: rgba(0, 0, 0, 0);
   text-color: @foregroundcolor;
