@@ -43,3 +43,4 @@ vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 vim.wo.number = true
 vim.wo.relativenumber = true
 --vim.cmd[[colorscheme tokyonight]]
+
