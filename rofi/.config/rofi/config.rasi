@@ -4,6 +4,7 @@ configuration {
   terminal: "kitty";
   run-shell-command: "{terminal} --window -- bash";
   drun-icon-theme: "Papirus-Dark";
+  show-icons: true;
   combi-modi: "drun,run";
   hide-scrollbar: true;
   window-format: "{w}{c}{t}";
@@ -17,4 +18,4 @@ configuration {
   display-keys: "Keys";
 }
 
-@theme "ayu-mirage.rasi"
+@theme "catppuccin.rasi"
