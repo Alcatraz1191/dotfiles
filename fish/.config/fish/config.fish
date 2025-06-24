@@ -11,3 +11,5 @@ if status is-interactive
     set -Ux TERM kitty
     set -Ux QT_QPA_PLATFORMTHEME qt5ct
 end
+
+fish_add_path /home/alcatraz1191/.spicetify
