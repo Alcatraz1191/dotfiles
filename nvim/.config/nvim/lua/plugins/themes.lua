@@ -1,9 +1,9 @@
 return {
-  "catppuccin/nvim",
+  "Mofiqul/dracula.nvim",
   lazy = false,
   priority = 1000,
   config = function()
-    require("catppuccin").setup()
-    require("catppuccin").load()
+    require("dracula").setup()
+    require("dracula").load()
   end,
 }
