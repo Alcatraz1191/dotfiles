@@ -1,0 +1,91 @@
+{
+  "layer": "top", // Waybar at top layer
+  "position": "top", // Waybar position (top|bottom|left|right)
+  // "width": 1280, // Waybar width
+
+  // Choose the order of the modules
+  "modules-left": ["hyprland/workspaces", "custom/temps", "custom/music"],
+  "modules-center": ["hyprland/window"],
+  "modules-right": ["pulseaudio", "custom/weather", "clock", "tray", "custom/lock", "custom/power"],
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "sort-by-name": true,
+    "format": " {icon} ",
+    "format-icons": {
+      "default": "",
+    },
+  },
+  "custom/temps": {
+    "exec": "/home/alcatraz1191/.config/waybar/custom/temps.sh",
+    "interval": 5, // every 5 seconds
+  },
+  "custom/weather": {
+    "format": {},
+    "return-type": "text",
+    "exec": "/home/alcatraz1191/.config/waybar/custom/weather.sh",
+    "interval": 600, //every 10 mins
+    "tooltip": false,
+  },
+  "tray": {
+    "icon-size": 21,
+    "spacing": 10
+  },
+  "custom/music": {
+    "format": "{}",
+    "return-type": "text",
+    "escape": true,
+    "restart-interval": 1,
+    "tooltip": false,
+    "exec": "/home/alcatraz1191/.config/waybar/custom/music.sh",
+    "exec-if": "pgrep playerctl",
+    "on-click": "/home/alcatraz1191/.config/waybar/custom/music_control.sh",
+   "max-length": 50,
+  },
+  "hyprland/window": {
+    "format": "{title}",
+    "format-empty": "",
+    "background": "#00000000",
+    "max-length": 50,
+  },
+  "clock": {
+    "timezone": "America/Chicago",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format-alt": " {:%m/%d/%Y}",
+    "format": "󰥔 {:%H:%M}"
+  },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{icon}",
+    "format-icons": ["", "", "", "", "", "", "", "", ""]
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon}",
+    "format-charging": "",
+    "format-plugged": "",
+    "format-alt": "{icon}",
+    "format-icons": ["", "",  "", "", "", "", "", "", "", "", "", ""]
+  },
+  "pulseaudio": {
+    // "scroll-step": 1, // %, can be a float
+    "format": "{icon} {volume}%",
+    "format-muted": "",
+    "format-icons": {
+      "default": ["", "", " "]
+    },
+    "on-click": "pavucontrol"
+  },
+  "custom/lock": {
+    "tooltip": false,
+    "on-click": "hyprlock",
+    "format": "",
+  },
+  "custom/power": {
+    "tooltip": false,
+    "on-click": "wlogout &",
+    "format": "⏻"
+  }
+}
