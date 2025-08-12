@@ -54,6 +54,14 @@ return {
             keymap = 'SPC',
             key_format = ' %s',
             action = 'lua print(3)'
+          },
+          {
+            icon = ' ',
+            desc = 'Live Grep',
+            key = 'f g',
+            keymap = 'SPC',
+            key_format = ' %s',
+            action = 'lua print(3)'
           }
         },
         footer = {""},
